@@ -33,11 +33,12 @@ const app = new Vue({
 			this.todos.splice(index, 1);
 		},
 		toggleDone: function(index) {
-			if(this.todos[index].done == true) {
-				this.todos[index].done = false;
-			} else {
-				this.todos[index].done = true;
-			}
+			// if(this.todos[index].done == true) {
+			// 	this.todos[index].done = false;
+			// } else {
+			// 	this.todos[index].done = true;
+			// }
+			this.todos[index].done = !this.todos[index].done;
 		}
 	}
 });
